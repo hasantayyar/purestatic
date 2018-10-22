@@ -1,5 +1,3 @@
-import { cleanBuild } from './cleaner';
-import { template } from './template';
 import * as path from 'path';
 import * as fs from 'fs-extra';
 import * as walker from 'klaw-sync';
@@ -33,6 +31,5 @@ const init = async (path: string) => {
 
 export const build = (): Promise<ReadonlyArray<walker.Item>> => {
   const buildPath = './build';
-  cleanBuild(buildPath);
   return init('./pages/');
 }
