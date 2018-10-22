@@ -1,4 +1,4 @@
 import { build } from './builder';
-import * as klawSync from 'klaw-sync';
+import * as walker from 'klaw-sync';
 
-const tree = build().then((data: klawSync.Item[]) => console.log(data.map((x: klawSync.Item) => x.path)));
+const tree = build().then((data: walker.Item[]) => console.log(data.map((x: walker.Item) => x.path)));
