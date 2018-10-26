@@ -5,6 +5,10 @@
   "main": "main.js",
   "author": "Hasan Tayyar Besik",
   "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --single-quote  es6 --write '{src,__{tests,mocks}__}/**/*.ts'",
+    "test:lint": "tslint src/*.ts -c tslint.json"
+  },
   "dependencies": {
     "fs-extra": "7.0.0",
     "klaw-sync": "^6.0.0"
@@ -12,6 +16,9 @@
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
     "@types/klaw-sync": "^5.0.0",
-    "@types/node": "^8.8.1"
+    "@types/node": "^8.8.1",
+    "prettier": "^1.14.3",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.3"
   }
 }
