@@ -2,20 +2,29 @@
   "name": "purestatic",
   "version": "1.0.0",
   "description": "A static website generator that generates plain text websites.",
-  "main": "main.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "author": "Hasan Tayyar Besik",
+  "keywords": [
+    "static pages, text pages, generator, site generator, plain text"
+  ],
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "prettier": "prettier --single-quote  es6 --write '{src,__{tests,mocks}__}/**/*.ts'",
     "test:lint": "tslint src/*.ts -c tslint.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasantayyar/purestatic.git"
+  },
   "dependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/klaw-sync": "^5.0.0",
     "fs-extra": "7.0.0",
     "klaw-sync": "^6.0.0"
   },
   "devDependencies": {
-    "@types/fs-extra": "^5.0.4",
-    "@types/klaw-sync": "^5.0.0",
     "@types/node": "^8.8.1",
     "prettier": "^1.14.3",
     "tslint": "^5.11.0",

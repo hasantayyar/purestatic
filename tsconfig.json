@@ -6,7 +6,9 @@
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "strict": true,
+    "declaration": true
   },
   "include": [
     "src/**/*"

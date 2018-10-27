@@ -34,7 +34,7 @@ const list = async (p: string, filter?: walker.Filter) =>
 export const build = async (p: string) => {
   await createPage(p);
   const dirs = await list(p, dirFilter);
-  await dirs.forEach(async (dir) => {
+  await dirs.forEach(async dir => {
     await createPage(dir.path);
     await build(dir.path);
   });
