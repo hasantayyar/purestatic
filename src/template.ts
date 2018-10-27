@@ -6,6 +6,7 @@ const header = [
   '<meta name="viewport" content="width=device-width">',
   '<meta name="theme-color" content="#1e2325">',
   // @TODO: add integrity="sha384-......" of file
+  // openssl dgst -sha384 -binary pages/style.css | openssl base64 -A
   `<link rel="stylesheet" href="${stylePath}" crossorigin="anonymous"/>`,
   ''
 ].join('');
